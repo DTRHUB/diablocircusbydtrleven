@@ -133,5 +133,69 @@ local Tab = Window:CreateTab("World", 4483362458)
       delete.workspace.Puzzle.HollyDoor.Door
 })
 
+local Button = Tab:CreateButton({
+   Name = "Remove all Windows",
+   Callback = function()
+   remove.workspace.Windows
+   delete.workspace.Windows
+})
+
+local Button = Tab:CreateButton({
+   Name = "Unlock Toilet room",
+   Callback = function()
+   remove.workspace.NeighborHouse.Collision:GetChildren()[295]
+   delete.workspace.NeighborHouse.Collision:GetChildren()[295]
+})
+
+local Tab = Window:CreateTab("Players", 4483362458)
+ local Section = Tab:CreateSection("Players")
+
+ local Keybind = Tab:CreateKeybind({
+   Name = "Noclip",
+   CurrentKeybind = "N",
+   HoldToInteract = false,
+   Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Keybind)
+      game.RunService.Stepped:Connect(function() 
+         game.Players.LocalPlayer.Character.Head.CanCollide = false
+         game.Players.LocalPlayer.Character.Torso.CanCollide = false 
+         end)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ESP",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DTRHUB/espcircus/refs/heads/main/ESPBYDTRLEVEN"))()
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "Fly",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RadeonScripts/Universal/refs/heads/main/FlyScript"))()
+})
+
+
+
+local Button = Tab:CreateButton({
+   Name = "KILL ALL",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DTRHUB/killallforcircus/refs/heads/main/hitboxexpander"))()
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "inf jump",
+   Callback = function()
+      ocal InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+})
+
+
 
 
