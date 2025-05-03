@@ -1,0 +1,137 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+    Name = "Diablo's Circus By DTRLEVEN",
+    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+    LoadingTitle = "LOADING",
+    LoadingSubtitle = "By DTRLEVEN",
+    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+ 
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ 
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "DIABLO'S CIRCUS 🎪 BY DTRLEVEN"
+    },
+ 
+    Discord = {
+       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+       Invite = "uTQ8Cdc44r", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+ 
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "DTR LEVEN KEY SYSTEM",
+       Subtitle = "link : https://link-hub.net/1345997/keydiablocircus4",
+       Note = "COMPLETE THE LINKVERTISE", -- Use this to tell the user how to get a key
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"bestscriptfordiablocircusbydtrleven"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+ Rayfield:Notify({
+   Title = "Diablo's Circus SCRIPT BY DTRLEVEN",
+   Content = "THANKS FOR USING MY SCRIPT",
+   Duration = 6.5,
+   Image = 4483362458,
+})
+
+ local Tab = Window:CreateTab("Item", 4483362458)
+ local Section = Tab:CreateSection("Item Teleport")
+
+ local Button = Tab:CreateButton({
+   Name = "OUTSIDE KEY Teleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (75.0288239, 3.66163635, 68.491066, 0.707134247, -0, -0.707079291, 0, 1, -0, 0.707079291, 0, 0.707134247)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Red Key Teleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (57.0907135, 27.7465172, 148.08429, -0.091786623, -0.004226177, 0.995769799, -0.0271836407, -0.999607801, -0.00674815848, 0.995407641, -0.0276880376, 0.091635704)
+})
+
+local Button = Tab:CreateButton({
+   Name = "Final Key",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (26.2308636, 19.2193184, 129.889069, -0.906296611, 0, 0.422642082, 0, 1, 0, -0.422642082, 0, -0.906296611)
+})
+
+local Button = Tab:CreateButton({
+   Name = "Key Card Teleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (60.2157631, 2.26956582, 111.784912, -0.999996781, 0.00267699431, -4.4987748e-05, 0.00266852952, 0.995188355, -0.0979439169, -0.000217424007, -0.0979436785, -0.995192289)
+})
+
+local Button = Tab:CreateButton({
+   Name = "Shovel Teleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (61.5556259, 19.9651489, 134.705185, -0.998827219, -0.0405891351, 0.0263951533, -0.0463712551, 0.95875591, -0.280422568, -0.0139244013, -0.281317651, -0.959513664)
+})
+
+local Button = Tab:CreateButton({
+   Name = "Jack Hammer" Teleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (72.4893875, 5.96884108, 147.592102, -0.563159108, -0.826173961, -0.0169869959, -0.00587171316, 0.0245568752, -0.999681234, 0.826327682, -0.562879801, -0.0186805725)
+})
+
+local Button = Tab:CreateButton({
+   Name = "Gun Teleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (39.7522964, 2.0982914, -6.69485044, 0.000132456757, -0.185619369, 0.982621729, -1, -0.00019461583, 9.80359837e-05, 0.000173036358, -0.982621729, -0.185619399)
+})
+
+local Button = Tab:CreateButton({
+   Name = "Crow BarTeleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (103.849243, 8.68763256, 141.177933, -0.906955123, -0.421208382, -0.00398352742, 0.00400318205, 0.000837564468, -0.999991596, 0.421208173, -0.906963527, 0.000926613808)
+})
+
+local Button = Tab:CreateButton({
+   Name = "Hammer Teleport",
+   Callback = function()
+   local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+  rootPart.CFrame = CFrame.new (29.611475, 5.81233406, 124.921661, -0.919910073, 0.391298443, 0.0255149808, -0.030427536, -0.00635817926, -0.999516726, -0.390947104, -0.920241892, 0.0177552011)
+})
+
+
+local Tab = Window:CreateTab("World", 4483362458)
+ local Section = Tab:CreateSection("World Actions")
+
+ local Button = Tab:CreateButton({
+   Name = "Remove all door",
+   Callback = function()
+   remove.workspace.Puzzle.BasementDoor.Door
+   remove.workspace.Puzzle.Doors.KeycardDoor.Door
+   remove.workspace.Puzzle.Doors.RedKeyDoor.Door
+   remove.workspace.Puzzle.BasementDoor.Board1["Cube.005"]
+   remove.workspace.Puzzle.BasementDoor.Board2["Cube.005"]
+   remove.workspace.Puzzle.grave.Shovelable
+   remove.workspace.Puzzle.Doors.BrickWall:GetChildren()[30]
+   remove.workspace.Puzzle.Doors.BrickWall:GetChildren()[31]
+   remove.workspace.Puzzle.Doors.BrickWall:GetChildren()[26]
+   remove.workspace.Puzzle.Doors.BrickWall:GetChildren()[14]
+   remove.workspace.Puzzle.Doors.BrickWall:GetChildren()[7]
+   remove.workspace.Puzzle.Doors.BrickWall:GetChildren()[22]
+   remove.workspace.Puzzle.Doors.BrickWall:GetChildren()[22]
+   remove.workspace.Puzzle:GetChildren()[137].Door
+   remove.workspace.NeighborHouse.Collision:GetChildren()[295]
+   delete.workspace.Puzzle.Doors.ShedDoor.Door
+      delete.workspace.Puzzle.HollyDoor.Door
+})
+
+
+
